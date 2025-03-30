@@ -4,11 +4,26 @@ import { assets } from "../assets/assets";
 
 const About = () => {
   return (
-    <section id="about" className='w-full py-1 px-5 lg:px-8 xl:px-[8%] bg-gray-100'>
-       <div className="absolute inset-0 bg-gray-50 opacity-50"></div>
+    <section id="about" className='w-full py-8 px-5 lg:px-8 xl:px-[8%] bg-gray-100'>
       {/* Main About Section */}
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16 mb-20">
+          {/* Left - Image */}
+          <div className="w-full md:w-1/2">
+            <div className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
+              <Image 
+                src="/work-3.png" 
+                alt="TAANZ Team" 
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                className="object-cover"
+                priority
+              />
+            </div>
+          </div>
+          
+
+          {/* Right - Content */}
           <div className="w-full md:w-1/2">
             <h1 className='text-black text-2xl sm:text-3xl lg:text-4xl font-bold mb-0 font-ovo md:text-start text-center max-w-4xl py-4'>
               About Us
@@ -18,20 +33,6 @@ const About = () => {
               With a focus on efficiency, accuracy, and compliance, we deliver exceptional service that frees up your resources to focus on strategic growth.
               Our team of experienced professionals is dedicated to providing the best possible service to our clients.
             </p>
-          </div>
-          
-          <div className="w-full md:w-1/2">
-            <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] overflow-hidden rounded-2xl shadow-xl">
-              <Image 
-                src="/work-3.png" 
-                alt="TAANZ Team" 
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-                className="object-cover"
-                priority
-              />
-              
-            </div>
           </div>
         </div>
 
