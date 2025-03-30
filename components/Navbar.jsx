@@ -40,7 +40,7 @@ const Navbar = () => {
             </div>
 
             <nav className={`w-full px-5 lg:px-8 xl:px-[8%] flex items-center justify-between z-50 bg-blue-300 shadow-md sticky top-0 py-[1px]`}>
-                <a href="#" className="transition-transform duration-300 hover:scale-105">
+                <a href="#" className="transition-transform duration-200 hover:scale-105">
                     <Image 
                         src={assets.logo} 
                         alt="taanz-logo" 
