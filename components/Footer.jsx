@@ -60,7 +60,7 @@ const Footer = () => {
           >
             <h3 className="text-white text-lg font-bold font-montserrat">Quick Links</h3>
             <ul className="space-y-2">
-              {['Home', 'About Us', 'Services', 'Contact'].map((link, index) => (
+              {['Home', 'About', 'Services', 'Contact'].map((link, index) => (
                 <motion.li
                   key={link}
                   whileHover={{ x: 5 }}
