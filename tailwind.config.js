@@ -13,7 +13,8 @@ module.exports = {
       },
       fontFamily: {
         outfit: ['Outfit', 'sans-serif'],
-        ovo: ['Ovo', 'sans-serif']
+        ovo: ['Ovo', 'sans-serif'],
+        montserrat: ['var(--font-montserrat)', 'sans-serif']
       }
     },
   },

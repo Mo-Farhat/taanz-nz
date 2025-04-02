@@ -1,4 +1,4 @@
-import { Outfit, Ovo } from "next/font/google";
+import { Outfit, Ovo, Montserrat } from "next/font/google";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -7,6 +7,12 @@ const outfit = Outfit({
 
 const ovo = Ovo({
   subsets: ["latin"], weight: ["400"]
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: '--font-montserrat',
 });
 
 export const metadata = {
@@ -18,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${outfit.className} ${ovo.className} antialiased`}
+        className={`${outfit.className} ${ovo.className} ${montserrat.variable} antialiased`}
       >
         {children}
       </body>
